@@ -1,0 +1,101 @@
+
+
+body {
+	background-color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#addUser {
+	background-color: cyan;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.view {
+	background-color: gold;
+}
+
+div.edit {
+	background-color: yellow;
+}
+
+
+#inputArea {
+	margin:20px;
+}
+#inputArea button {
+	margin-bottom: 10px;
+}
+
+#inputArea input, .editing input {
+	width:200px;
+}
+
+label {
+	float: left;
+	font-weight: bold;
+	width: 120px;
+}
+
+
+#viewContainer, #editContainer {
+	padding:10px;
+	margin:10px;
+}
+#main {
+	display: none;
+}
+
+#user-list {
+	margin: 10px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#user-list li {
+	background-color: grey;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px;
+}
+
+#user-list li:last-child {
+	border-bottom: none;
+}
+
+button {
+	cursor: pointer;
+	width: 60px;
+	height: 20px;
+}
+button .remove {
+	background-color: red;
+}
+
+
+#editContainer >div, #viewContainer > div {
+	margin-bottom:5px;
+}
+
+#inputArea > div {
+	margin-bottom: 5px;
+}
+
+
+#user-list li.editing .edit{
+	display: inline;
+}
+
+
+#user-list li .edit {
+	display: none;
+}
+
+
+
+

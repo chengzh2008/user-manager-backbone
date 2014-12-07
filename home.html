@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Backbone.js Contact Manager</title>
+<link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+
+    <div id="userManagerApp">
+
+        <header id="addUser">
+            <div id="inputArea">
+                <h1>User Manager </h1>
+            
+                <div><label>Frist Name:</label><input id="firstText" type="text" placeholder="First Name: Required"></div>
+                <div><label>Last Name:</label><input id="lastText" type="text" placeholder="Last Name"></div>
+                <div><label>Email:</label><input id="emailText" type="text" placeholder="e-mail : Valid format (xyz@abc.com)"></div>
+                <div>
+                    <button class="add" id="addBtn" href="#">Add User</button>
+                </div>
+            </div>
+
+        </header>
+
+        <section id="main">
+            <ul id="user-list"></ul>
+        </section>
+
+        
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/backbone.localStorage.js"></script>
+    <script src="js/user.js"></script>
+
+    <!-- Templates -->
+
+    <script type="text/template" id="item-template">
+    <div class="view">
+        <div id="viewContainer">
+        <div>
+            <label>First Name: </label><%- first %>
+        </div>
+        <div>       
+            <label>Last Name: </label><%- last %>
+        </div>
+        <div> 
+            <label>Email: </label><%- email %>
+        </div>
+        <div>
+            <button class="remove">Remove</button>
+            <button class="update">Update</button>
+        </div>
+        </div>
+    </div>
+    <div class="edit">
+        <div id="editContainer">
+        <div>
+            <label>First Name:</label><input class="edit" type="text" value="<%- first %>" id="first"/>
+        </div>
+        <div>
+            <label>Last Name:</label><input class="edit" type="text" value="<%- last %>" id="last"/>   
+        </div>  
+        <div>
+            <label>Email:</label><input class="edit" type="text" value="<%- email %>" id="email"/>
+        </div>
+        <div>
+            <button class="update" id="updtBt" href="#">Update</button>
+        <div>
+        </div>
+    </div>
+    </script>
+
+</body>
+</html>
